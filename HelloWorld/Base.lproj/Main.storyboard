@@ -30,12 +30,15 @@
                                     <constraint firstAttribute="height" constant="60" id="xlQ-pe-gXK"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Show Text" cornerStyle="capsule">
-                                    <backgroundConfiguration key="background">
+                                <buttonConfiguration key="configuration" style="filled" title="Show Text" cornerStyle="fixed">
+                                    <backgroundConfiguration key="background" cornerRadius="10">
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                     </backgroundConfiguration>
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="makeButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3EH-1P-6zc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -49,6 +52,10 @@
                             <constraint firstItem="cZd-DK-vvc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ro1-ss-7A9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="helloWorldLabel" destination="cZd-DK-vvc" id="qxG-rz-MRX"/>
+                        <outlet property="toggleButton" destination="873-7I-O5c" id="yrp-mG-6hX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
